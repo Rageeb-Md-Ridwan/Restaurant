@@ -1,0 +1,80 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    {%block link_css%}
+    <link rel="stylesheet" href="{%static 'css/style0.css' %}">
+    {% endblock %}
+
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light "
+    >
+    <h3 style="margin-right:40px;"><i><b>Culinary Oasis</b></i></h3>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li></li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{%url 'home'%}"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{%url 'details'%}">Show Item</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{%url 'about'%}">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    {%block desc_container%}
+    <div class="description ">
+      <img id='res-img' src="{%static 'images/res 1.jpg' %}" alt="this is an image" />
+      <div>
+        <p><h2>Experience culinary delight at our upscale restaurant, where every dish is a masterpiece crafted with passion and precision. Nestled in a cozy ambiance, our restaurant offers a fusion of flavors from around the world, curated by our skilled chefs. Indulge in a diverse menu featuring fresh, locally sourced ingredients, paired with an extensive selection of fine wines and artisanal cocktails. Whether you're seeking an intimate dinner for two or hosting a celebratory event, our attentive staff ensures a memorable dining experience. From appetizing starters to decadent desserts, savor exquisite flavors and impeccable service at our renowned restaurant.</h2></p>
+      </div>
+    </div>
+    {%endblock%}
+
+    {% comment %} js files {% endcomment %}
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

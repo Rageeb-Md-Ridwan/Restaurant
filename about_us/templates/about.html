@@ -1,0 +1,31 @@
+{%extends 'base.html'%} {%load static%} {% block link_css %}
+<link rel="stylesheet" href="{%static 'css/style2.css' %}" />
+{% endblock %} {% block desc_container%}
+
+<div class="container">
+  <img
+    src="{%static 'images/pic2.jpeg' %}"
+    class="abt-img rounded float-left"
+    alt="this is "
+  />
+  <div>
+    <span id="abt-p">
+      Welcome to Culinary Oasis, where passion for food meets the art of dining.
+      Nestled in the heart of Dhaka, our restaurant is a haven for food
+      enthusiasts seeking a memorable culinary experience. At Culinary Oasis, we
+      believe in the power of flavor to transport you to distant lands and
+      create unforgettable memories. Our menu is a celebration of global
+      cuisine, crafted with locally-sourced ingredients and infused with
+      creativity and expertise. Whether you're indulging in our signature dishes
+      or exploring new flavors, every bite is an adventure. Join us and embark
+      on a journey of gastronomic delight at Culinary Oasis.
+    </span>
+  </div>
+  <img
+    src="{%static 'images/pic3.jpeg' %}"
+    class="abt-img rounded float-right"
+    alt="an image"
+  />
+</div>
+
+{%endblock%}

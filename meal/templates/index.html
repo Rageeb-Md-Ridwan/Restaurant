@@ -1,0 +1,16 @@
+{%extends 'base.html'%} {%load static%} {% block link_css %}
+<link rel="stylesheet" href="{%static 'style1.css' %}" />
+{% endblock %} {% block desc_container%}
+
+<div class="cards">
+  {% for i in data.categories%}
+  <div class="card" style="width: 18rem">
+    <img src="{{ i.strCategoryThumb }}" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">{{ i.strCategory }}</h5>
+      <p class="card-text">{{ i.strCategoryDescription | truncatewords:10 }}</p>
+    </div>
+  </div>
+  {%endfor%}
+</div>
+{%endblock%}

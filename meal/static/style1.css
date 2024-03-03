@@ -1,0 +1,19 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+
+  /* grid-template-columns: repeat(3, 1fr); Three columns with equal width */
+  grid-gap: 20px; /* Gap between cards */
+}
+
+.card {
+  /* Your card styles */
+  width: 18rem;
+}
+
+.card-img-top {
+  /* Your card image styles */
+  width: 100%;
+  height: auto;
+}

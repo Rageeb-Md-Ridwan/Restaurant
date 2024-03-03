@@ -1,0 +1,14 @@
+.abt-img {
+  width: 300px;
+  height: 600px;
+  border-radius: 5px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+}
+#abt-p {
+  text-align: center;
+}
